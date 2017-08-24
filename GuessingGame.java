@@ -4,28 +4,32 @@ public class GuessingGame {
 	public static void main(String[] args) 
 	{
 		Scanner cin=new Scanner(System.in);
-		System.out.println("Please guess a number between 1 and 100:");
+		System.out.println("Please input a guess between 1 and a:");
+		System.out.println("What will a be?");
+		int a=cin.nextInt();
+		System.out.println("Okay, lets go!");
 		int n=cin.nextInt();
-		int a=1;
-		int b=100;
-		int random=(int)(a+b*Math.random());
+		int random=(int)(1+a*Math.random());
 		
-		while (true)
+
+		do
 		{
 			if (n<random)
 			{
-				System.out.println("Too low!");
+				System.out.println("Too low, try again!");
 			}
 			else if (n>random)
 			{
-				System.out.println("Too high!");
+				System.out.println("Too high, try again!");
 			}
 			else if (n==random)
 			{
 				System.out.println("You got it!");
+				System.out.println("Do you want to continue? y/n");
+				
+				
 			}
-		}
-		//cin.close();
+			n=cin.nextInt();
+		}while (true);
 	}
-
 }
