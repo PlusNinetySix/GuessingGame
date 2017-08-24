@@ -25,9 +25,6 @@ public class GuessingGame {
 			else if (n==random)
 			{
 				System.out.println("You got it!");
-				System.out.println("Do you want to continue? y/n");
-				
-				
 			}
 			n=cin.nextInt();
 		}while (true);
