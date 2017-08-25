@@ -28,6 +28,7 @@ public class GuessingGame {
                                 break;
 			}
 			n=cin.nextInt();
+			cin.close();
 		}while (true);
 	}
 }
