@@ -25,8 +25,10 @@ public class GuessingGame {
 			else if (n==random)
 			{
 				System.out.println("You got it!");
+                                break;
 			}
 			n=cin.nextInt();
 		}while (true);
+            
 	}
 }
